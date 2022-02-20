@@ -1,0 +1,779 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="xin_12zu">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="7.9311E-06 -1.1286E-06 3.1729E-08"
+        rpy="0 0 0" />
+      <mass
+        value="0.037895" />
+      <inertia
+        ixx="3.9107E-05"
+        ixy="-8.067E-10"
+        ixz="-3.7841E-11"
+        iyy="3.91E-05"
+        iyz="1.6043E-11"
+        izz="3.9101E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://xin_12zu/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://xin_12zu/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="Empty_Link1">
+    <inertial>
+      <origin
+        xyz="-2.0629E-13 2.3413E-13 0.019791"
+        rpy="0 0 0" />
+      <mass
+        value="0.041471" />
+      <inertia
+        ixx="3.1606E-05"
+        ixy="3.3881E-21"
+        ixz="4.9763E-21"
+        iyy="3.1606E-05"
+        iyz="1.0376E-20"
+        izz="2.9764E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://xin_12zu/meshes/Empty_Link1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://xin_12zu/meshes/Empty_Link1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint1"
+    type="prismatic">
+    <origin
+      xyz="-0.026699 -0.043198 0"
+      rpy="-1.5708 -0.72228 2.588" />
+    <parent
+      link="base_link" />
+    <child
+      link="Empty_Link1" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0.08"
+      effort="0"
+      velocity="0" />
+    <dynamics
+      damping="0.1"
+      friction="1" />
+  </joint>
+  <link
+    name="Empty_Link2">
+    <inertial>
+      <origin
+        xyz="-5.2874E-14 -2.6096E-14 0.060978"
+        rpy="0 0 0" />
+      <mass
+        value="0.041471" />
+      <inertia
+        ixx="3.1606E-05"
+        ixy="2.3293E-21"
+        ixz="-1.2705E-21"
+        iyy="3.1606E-05"
+        iyz="-1.4823E-21"
+        izz="2.9764E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://xin_12zu/meshes/Empty_Link2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://xin_12zu/meshes/Empty_Link2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint2"
+    type="prismatic">
+    <origin
+      xyz="0.0050449 -0.0081627 0"
+      rpy="1.5708 -1.1121 0.55358" />
+    <parent
+      link="base_link" />
+    <child
+      link="Empty_Link2" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0.08"
+      effort="0"
+      velocity="0" />
+    <dynamics
+      damping="0.1"
+      friction="1" />
+  </joint>
+  <link
+    name="Empty_Link3">
+    <inertial>
+      <origin
+        xyz="5.7058E-14 3.0676E-13 0.019791"
+        rpy="0 0 0" />
+      <mass
+        value="0.041471" />
+      <inertia
+        ixx="3.1606E-05"
+        ixy="-1.2705E-21"
+        ixz="1.2266E-22"
+        iyy="3.1606E-05"
+        iyz="7.9359E-21"
+        izz="2.9764E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://xin_12zu/meshes/Empty_Link3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://xin_12zu/meshes/Empty_Link3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint3"
+    type="prismatic">
+    <origin
+      xyz="0.043198 0 -0.026699"
+      rpy="-2.854 -0.99051 -0.34001" />
+    <parent
+      link="base_link" />
+    <child
+      link="Empty_Link3" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0.08"
+      effort="0"
+      velocity="0" />
+    <dynamics
+      damping="0.1"
+      friction="1" />
+  </joint>
+  <link
+    name="Empty_Link4">
+    <inertial>
+      <origin
+        xyz="-3.0234E-13 -7.715E-14 0.019791"
+        rpy="0 0 0" />
+      <mass
+        value="0.041471" />
+      <inertia
+        ixx="3.1606E-05"
+        ixy="6.3527E-22"
+        ixz="-7.1204E-21"
+        iyy="3.1606E-05"
+        iyz="-6.0351E-21"
+        izz="2.9764E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://xin_12zu/meshes/Empty_Link4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://xin_12zu/meshes/Empty_Link4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint4"
+    type="prismatic">
+    <origin
+      xyz="0.026699 0.043198 0"
+      rpy="1.5708 -1.3209 2.588" />
+    <parent
+      link="base_link" />
+    <child
+      link="Empty_Link4" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0.08"
+      effort="0"
+      velocity="0" />
+    <dynamics
+      damping="0.1"
+      friction="1" />
+  </joint>
+  <link
+    name="Empty_Link5">
+    <inertial>
+      <origin
+        xyz="7.4812E-14 -7.3908E-15 0.058338"
+        rpy="0 0 0" />
+      <mass
+        value="0.041471" />
+      <inertia
+        ixx="3.1606E-05"
+        ixy="8.9997E-22"
+        ixz="-3.5734E-21"
+        iyy="3.1606E-05"
+        iyz="-9.5291E-22"
+        izz="2.9764E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://xin_12zu/meshes/Empty_Link5.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://xin_12zu/meshes/Empty_Link5.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint5"
+    type="prismatic">
+    <origin
+      xyz="-0.0064325 0.010408 0"
+      rpy="1.5708 1.4723 -2.588" />
+    <parent
+      link="base_link" />
+    <child
+      link="Empty_Link5" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0.08"
+      effort="0"
+      velocity="0" />
+    <dynamics
+      damping="0.1"
+      friction="1" />
+  </joint>
+  <link
+    name="Empty_Link6">
+    <inertial>
+      <origin
+        xyz="-3.8414E-14 3.0963E-13 0.019791"
+        rpy="0 0 0" />
+      <mass
+        value="0.041471" />
+      <inertia
+        ixx="3.1606E-05"
+        ixy="4.2352E-22"
+        ixz="-3.2942E-21"
+        iyy="3.1606E-05"
+        iyz="-8.0948E-21"
+        izz="2.9764E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://xin_12zu/meshes/Empty_Link6.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://xin_12zu/meshes/Empty_Link6.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint6"
+    type="prismatic">
+    <origin
+      xyz="-0.043198 0 0.026699"
+      rpy="-0.19664 1.005 2.9098" />
+    <parent
+      link="base_link" />
+    <child
+      link="Empty_Link6" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0.08"
+      effort="0"
+      velocity="0" />
+    <dynamics
+      damping="0.1"
+      friction="1" />
+  </joint>
+  <link
+    name="Empty_Link7">
+    <inertial>
+      <origin
+        xyz="-1.3878E-17 -1.5266E-16 0.070573"
+        rpy="0 0 0" />
+      <mass
+        value="0.041471" />
+      <inertia
+        ixx="3.1606E-05"
+        ixy="8.4703E-22"
+        ixz="4.2352E-22"
+        iyy="3.1606E-05"
+        iyz="4.6587E-21"
+        izz="2.9764E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://xin_12zu/meshes/Empty_Link7.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://xin_12zu/meshes/Empty_Link7.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint7"
+    type="prismatic">
+    <origin
+      xyz="0 0 0"
+      rpy="0.46754 0.3081 -0.54089" />
+    <parent
+      link="base_link" />
+    <child
+      link="Empty_Link7" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0.08"
+      effort="0"
+      velocity="0" />
+    <dynamics
+      damping="0.1"
+      friction="1" />
+  </joint>
+  <link
+    name="Empty_Link8">
+    <inertial>
+      <origin
+        xyz="-3.3412E-14 -4.3414E-14 0.061654"
+        rpy="0 0 0" />
+      <mass
+        value="0.041471" />
+      <inertia
+        ixx="3.1606E-05"
+        ixy="1.6941E-21"
+        ixz="-2.925E-21"
+        iyy="3.1606E-05"
+        iyz="5.6059E-21"
+        izz="2.9764E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://xin_12zu/meshes/Empty_Link8.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://xin_12zu/meshes/Empty_Link8.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint8"
+    type="prismatic">
+    <origin
+      xyz="0.0075874 0 0.0046894"
+      rpy="0.77883 0.7397 0.97159" />
+    <parent
+      link="base_link" />
+    <child
+      link="Empty_Link8" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0.08"
+      effort="0"
+      velocity="0" />
+    <dynamics
+      damping="0.1"
+      friction="1" />
+  </joint>
+  <link
+    name="Empty_Link9">
+    <inertial>
+      <origin
+        xyz="-1.7347E-18 -6.9389E-18 0.019791"
+        rpy="0 0 0" />
+      <mass
+        value="0.041471" />
+      <inertia
+        ixx="3.1606E-05"
+        ixy="6.3527E-22"
+        ixz="6.2866E-21"
+        iyy="3.1606E-05"
+        iyz="8.1527E-21"
+        izz="2.9764E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://xin_12zu/meshes/Empty_Link9.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://xin_12zu/meshes/Empty_Link9.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint9"
+    type="prismatic">
+    <origin
+      xyz="0 0.026699 0.043198"
+      rpy="0.55134 0.052581 3.0563" />
+    <parent
+      link="base_link" />
+    <child
+      link="Empty_Link9" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0.08"
+      effort="0"
+      velocity="0" />
+    <dynamics
+      damping="0.1"
+      friction="1" />
+  </joint>
+  <link
+    name="Empty_Link10">
+    <inertial>
+      <origin
+        xyz="5.0307E-17 2.7756E-17 0.019791"
+        rpy="0 0 0" />
+      <mass
+        value="0.041471" />
+      <inertia
+        ixx="3.1606E-05"
+        ixy="-5.0822E-21"
+        ixz="1.1753E-20"
+        iyy="3.1606E-05"
+        iyz="-1.1329E-20"
+        izz="2.9764E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://xin_12zu/meshes/Empty_Link10.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://xin_12zu/meshes/Empty_Link10.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint10"
+    type="prismatic">
+    <origin
+      xyz="0 -0.026699 -0.043198"
+      rpy="2.6411 0.24739 0.42097" />
+    <parent
+      link="base_link" />
+    <child
+      link="Empty_Link10" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0.08"
+      effort="0"
+      velocity="0" />
+    <dynamics
+      damping="0.1"
+      friction="1" />
+  </joint>
+  <link
+    name="Empty_Link11">
+    <inertial>
+      <origin
+        xyz="5.6379E-18 -4.3368E-18 0.060376"
+        rpy="0 0 0" />
+      <mass
+        value="0.041471" />
+      <inertia
+        ixx="3.1606E-05"
+        ixy="-5.0822E-21"
+        ixz="-1.2176E-21"
+        iyy="3.1606E-05"
+        iyz="3.7058E-21"
+        izz="2.9764E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://xin_12zu/meshes/Empty_Link11.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://xin_12zu/meshes/Empty_Link11.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint11"
+    type="prismatic">
+    <origin
+      xyz="0 0.0053613 -0.0086747"
+      rpy="-2.6159 -0.18215 0.30262" />
+    <parent
+      link="base_link" />
+    <child
+      link="Empty_Link11" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0.08"
+      effort="0"
+      velocity="0" />
+    <dynamics
+      damping="0.1"
+      friction="1" />
+  </joint>
+  <link
+    name="Empty_Link12">
+    <inertial>
+      <origin
+        xyz="7.0042E-14 -1.218E-14 0.059016"
+        rpy="0 0 0" />
+      <mass
+        value="0.041471" />
+      <inertia
+        ixx="3.1606E-05"
+        ixy="3.3881E-21"
+        ixz="8.2727E-22"
+        iyy="3.1606E-05"
+        iyz="-1.3533E-21"
+        izz="2.9764E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://xin_12zu/meshes/Empty_Link12.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://xin_12zu/meshes/Empty_Link12.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint12"
+    type="prismatic">
+    <origin
+      xyz="-0.0098312 0 -0.0060761"
+      rpy="2.1311 -0.14637 -1.662" />
+    <parent
+      link="base_link" />
+    <child
+      link="Empty_Link12" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0.08"
+      effort="0"
+      velocity="0" />
+    <dynamics
+      damping="0.1"
+      friction="1" />
+  </joint>
+</robot>
